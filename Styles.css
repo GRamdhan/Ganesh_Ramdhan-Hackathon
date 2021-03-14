@@ -1,0 +1,246 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+
+.container {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 650px 40px;
+    grid-template-areas:
+        "h h h h h h"
+        "c c c c c c"
+        "f f f f f f";
+    background-color: lightgrey;
+}
+
+a:hover {
+    border: 4px #437beb;
+    border-top-style: solid;
+    border-radius: 4px;  
+    font-weight: bold;    
+}
+
+.active {
+    border: 4px #437beb;
+    border-top-style: solid;
+    border-radius: 4px; 
+    font-weight: bold;
+}
+
+.navbar {
+    grid-area: h;
+    background-color: white;
+    font-size: 10px;
+}
+
+.navbar a {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    color: black;
+    padding: 0.5% 5%;
+    text-decoration: none;
+    border-radius: 1px;
+    float:right;
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+.content {
+    grid-area: c;
+    background-image:url("achtergrond.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.header {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    color:black;
+    text-align:center;
+    float: left;
+    margin-top: 1.5cm;
+    margin-left: 0.5cm;
+}
+
+.footer {
+    display: flex;
+    grid-area: f;
+    text-align: center;
+    background-color: white;
+}
+
+.fa {
+    padding: 1%;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 3px;
+    margin-bottom: 3%;
+    margin-top: 0.5%;
+    border-radius: 30%;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 34%;
+  }
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.copyright {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+    margin-right: 34%;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+@media (min-width: 768px) {
+    
+     .container {
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 70px 750px auto;
+        grid-template-areas:
+            "h h h h h h"
+            "c c c c c c"
+            "f f f f f f";
+        background-color: lightgrey;
+    }
+    
+    a:hover {
+        border: 4px #437beb;
+        border-top-style: solid;
+        border-radius: 4px;  
+        font-weight: bold;    
+    }
+    
+    .active {
+        border: 4px #437beb;
+        border-top-style: solid;
+        border-radius: 4px; 
+        font-weight: bold;
+    }
+    
+    .navbar {
+        grid-area: h;
+        background-color: white;
+         
+    }
+    
+    .navbar a {
+        font-family: Ubuntu, Helvetica, sans-serif;
+        color: black;
+        padding: 0.5% 3%;
+        text-decoration: none;
+        border-radius: 1px;
+        float:right;
+        font-size: 14px;
+        margin-top: 1%;
+    }
+    
+    .content {
+        grid-area: c;
+        background-image:url("achtergrond.jpg");
+        background-size:cover;
+        
+        width: auto;
+        height: auto;
+    }
+    
+    .header {
+        display:grid;
+        font-family: Ubuntu, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: 100;
+        color:linen;
+        opacity: .9;
+        text-align: center;
+        float: left;
+        margin-top: 8.5cm;
+        margin-left: 5cm;
+    }
+
+    .footer {
+        display: flex;
+        grid-area: f;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .fa {
+        padding: 1%;
+        font-size: 30px;
+        width: auto;
+        height: auto;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        margin-bottom: 0.5%;
+        margin-top: 0.5%;
+        border-radius: 30%;
+    }
+    
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        margin-left: 34%;
+    }
+    
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+      
+    .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+      
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+    
+    .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+    
+    .copyright {
+    
+        font-family: Ubuntu, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 34%;
+        margin-left: 1%;
+        margin-top: 6.3%;
+        padding-left: 3%;
+    }
+
+}

@@ -1,0 +1,609 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 325px 325px 40px;
+    grid-template-areas:
+        "h h h h h h"
+        "c c c c c c"
+        "d d d d d d"
+        "f f f f f f";
+    background-color: lightgrey;
+    font-family: Ubuntu, Helvetica, sans-serif;
+}
+
+a:hover {
+    border: 4px #437beb;
+    border-top-style: solid;
+    border-radius: 4px;  
+    font-weight: bold;    
+}
+
+.active {
+    border: 4px #437beb;
+    border-top-style: solid;
+    border-radius: 4px; 
+    font-weight: bold;
+}
+
+.navbar {
+    grid-area: h;
+    background-color: white;
+    font-size: 10px;
+}
+
+.navbar a {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    color: black;
+    padding: 0.5% 5%;
+    text-decoration: none;
+    border-radius: 1px;
+    float:right;
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+.about {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    margin-top: 35%; 
+    grid-area: c;
+}
+    
+.lucille img {
+    float: left;
+    padding: 3%;
+    max-width: 27%;
+    opacity: 90%; 
+    border-radius: 0%;
+}
+
+.julia img {
+    float: left;
+    padding: 3%;
+    max-width: 27%;
+    opacity: 90%; 
+    border-radius: 0%;
+}
+
+.michael img {
+    float: left;
+    padding: 3%;
+    max-width: 27%;
+    opacity: 90%; 
+    border-radius: 0%;
+}
+    
+.lucille h1 {
+    width: 20%;
+    height:100px;
+    font-size: 10px;
+    margin-left: 7% ;
+    word-break: break-all;
+    text-align: center;
+    margin-top: -25%;
+    font-weight: lighter;
+}
+
+.julia h1 {
+    width: 20%;
+    height: 100px;
+    font-size: 10px;
+    margin-left: 39% ;
+    word-break: break-all;
+    text-align: center;
+    margin-top: -2.856cm;
+    font-weight: lighter;
+}
+
+.michael h1 {
+    width: 20%;
+    height: 100px;
+    font-size: 10px;
+    margin-left: 72%;
+    word-break: break-all;
+    text-align: center;
+    margin-top: -2.855cm;
+    font-weight: lighter;
+}
+    
+.footer {
+    display: flex;
+    grid-area: f;
+    text-align: center;
+    background-color: white;
+}
+
+.fa {
+    padding: 1%;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 3px;
+    margin-bottom: 3%;
+    margin-top: 0.5%;
+    border-radius: 30%;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 30%;
+  }
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.copyright {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-size: 7px;
+    font-weight: 600;
+    margin-right: 3%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+h3 {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: 50%; 
+    font-size: 100%;
+    text-align:center;
+}
+
+h4 {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: 50%;  
+    font-size: 100%;
+    text-align:center;
+    margin-bottom: 10%;
+    }
+
+.main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    justify-self: center;
+    margin-left: 25%;
+    font-size: 12px;
+}
+
+.main2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    justify-self: center;
+    margin-right: 25%;
+    font-size: 12px;
+}
+
+h5 {
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: 85%;  
+    font-size: 100%;
+    text-align: center;
+    word-break: break-all;
+}
+
+.header {
+    grid-column-start: 3;
+    overflow: visible;
+    margin-top: -55%;
+    font-size: 14px;
+    font-weight:bolder;
+}
+
+.slider {
+    grid-area: d;
+    grid-column-start: 1;
+    min-width:15%;
+    overflow: hidden; 
+    height:auto; 
+    position:relative; 
+    margin-left:13%;
+    margin-top: -5%;
+    margin-bottom: 9%;
+}
+
+.slider img{ 
+    position:absolute; 
+    animation:fling-minislide 20s infinite; 
+    opacity:0; 
+    min-width: 80%;
+    min-height: auto;
+    display: block;
+}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.slider img:nth-child(4){animation-delay:0s;}
+.slider img:nth-child(3){animation-delay:2s;}
+.slider img:nth-child(2){animation-delay:4s;}
+.slider img:nth-child(1){animation-delay:8s;}
+.slider2 img:nth-child(4){animation-delay:0s;}
+.slider2 img:nth-child(3){animation-delay:2s;}
+.slider2 img:nth-child(2){animation-delay:4s;}
+.slider2 img:nth-child(1){animation-delay:8s;}
+
+.header {
+    overflow: hidden; 
+    margin: 1 auto; 
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+
+
+.signup {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin:4%;
+    text-align:center;
+    height: 650px;
+   background-image: linear-gradient(grey,lightgrey);
+   font-size: 10px;
+}
+
+.slider2 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    height: 65px;
+    position:relative; 
+}
+
+.slider2 img{ 
+    position:absolute; 
+    animation:fling-minislide 20s infinite; 
+    margin-top:12%; 
+    width: 150px;
+    height: 675px;
+    object-fit: cover;
+}
+
+.centertext3 {
+    font-style: italic;
+}
+
+.video {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    margin-top: 135%;
+    margin-right:14%;
+    margin-bottom: -50%;
+}
+iframe {
+    max-width: 350%;
+    max-height: 50%;
+}
+
+@media (min-width: 768px) {
+    
+            .container {
+              display: grid;
+              grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+              grid-template-rows:70px 410px 350px auto;
+              grid-template-areas:
+                "h h h h h h"
+                "c c c c c c"
+                "d d d d d d"
+                "f f f f f f";
+              background-color: lightgrey;
+              font-family: Ubuntu, Helvetica, sans-serif;
+        }
+        
+        a:hover {
+            border: 4px #437beb;
+            border-top-style: solid;
+            border-radius: 4px;  
+            font-weight: bold;    
+        }
+        
+        .active {
+            border: 4px #437beb;
+            border-top-style: solid;
+            border-radius: 4px; 
+            font-weight: bold;
+        }
+        
+        .navbar {
+            grid-area: h;
+            background-color: white;
+        }
+        
+        .navbar a {
+            font-family: Ubuntu, Helvetica, sans-serif;
+            color: black;
+            padding: 0.5% 3%;
+            text-decoration: none;
+            float:right;
+            font-size: 14px;
+            margin-top: 1%;
+        }
+        
+        .about {
+            font-family: Ubuntu, Helvetica, sans-serif;
+            margin-top: 12%;
+            margin-left: 15%; 
+            grid-area: c;
+        }
+            
+        img {
+            float: left;
+            width: 24%;
+            padding: 3%;
+            max-width: 21.5%;
+            opacity: 90%; 
+            border-radius: 0%;
+        }
+            
+        .lucille h1 {
+            width: 20%;
+            height: 100px;
+            font-size: 14px;
+            margin-left: 5% ;
+            word-break: break-all;
+            text-align: center;
+            margin-top: -2.855cm;
+            font-weight: lighter;
+        }
+        
+        .julia h1 {
+            width: 20%;
+            height: 100px;
+            font-size: 14px;
+            margin-left: 35% ;
+            word-break: break-all;
+            text-align: center;
+            margin-top: -2.856cm;
+            font-weight: lighter;
+        }
+        
+        .michael h1 {
+            width: 20%;
+            height: 100px;
+            font-size: 14px;
+            margin-left: 65% ;
+            word-break: break-all;
+            text-align: center;
+            margin-top: -2.855cm;
+            font-weight: lighter;
+        }
+            
+        .footer {
+            display: flex;
+            grid-area: f;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .fa {
+            padding: 1%;
+            font-size: 30px;
+            width: auto;
+            height: auto;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            margin-bottom: 0.5%;
+            margin-top: 0.5%;
+            border-radius: 30%;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            margin-left: 34%;
+        }
+        
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+          
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+          
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        
+        .copyright {
+            font-family: Ubuntu, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 34%;
+            margin-left: 1%;
+            margin-top: 1.3%;
+        }
+        
+        h3 {
+            font-family: Ubuntu, Helvetica, sans-serif;
+            font-weight: lighter;
+            margin-top: 50%; 
+            font-size: 100%;
+            text-align:center;
+        }
+        
+        h4 {
+            font-family: Ubuntu, Helvetica, sans-serif;
+            font-weight: lighter;
+            margin-top: 50%;  
+            font-size: 100%;
+            text-align:center;
+            margin-bottom: 10%;
+            }
+        
+        .main {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            justify-self: center;
+            margin-left: 25%;
+            font-size: 95%;
+            
+            
+            }
+        
+        .main2 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            justify-self: center;
+            margin-right: 25%;
+            font-size: 95%;
+        }
+        
+        h5 {
+            font-family: Ubuntu, Helvetica, sans-serif;
+            font-weight: lighter;
+            margin-top: 65%;  
+            font-size: 100%;
+            text-align: center;
+            word-break: break-all;
+        }
+        
+        .header {
+            grid-column-start: 3;
+            overflow: visible;
+            margin-top: -55%;
+            font-size: 180%;
+            font-weight:bolder;
+        }
+        
+        .slider {
+            grid-area: d;
+            grid-column-start: 1;
+            min-width:15%;
+            overflow: hidden; 
+            height:auto; 
+            position:relative; 
+            margin-left:13%;
+            margin-top: -5%;
+            margin-bottom: 9%;
+        }
+        
+        .slider img{ 
+            position:absolute; 
+            animation:fling-minislide 20s infinite; 
+            opacity:0; 
+            min-width: 80%;
+            min-height: auto;
+            display: block;
+        }
+        
+        @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+        .slider img:nth-child(4){animation-delay:0s;}
+        .slider img:nth-child(3){animation-delay:2s;}
+        .slider img:nth-child(2){animation-delay:4s;}
+        .slider img:nth-child(1){animation-delay:8s;}
+        .slider2 img:nth-child(4){animation-delay:0s;}
+        .slider2 img:nth-child(3){animation-delay:2s;}
+        .slider2 img:nth-child(2){animation-delay:4s;}
+        .slider2 img:nth-child(1){animation-delay:8s;}
+        
+        .header {
+            overflow: hidden; 
+            margin: 1 auto; 
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+          
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+          
+        .container4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 70px 750px 70px;
+            grid-template-areas:
+                "h h h h h h"
+                "c c c c c c"
+            
+                "f f f f f f";
+            background-color: lightgrey;
+            font-family: Ubuntu, Helvetica, sans-serif;
+            margin-bottom: -1.5cm;
+        }
+        
+        .signup {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin:4%;
+            text-align:center;
+            height: 700px;
+           background-image: linear-gradient(grey,lightgrey);
+           font-size: 14px;
+           border-radius: 0%;
+        }
+
+        .slider2 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            margin-top:-5%; 
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-left: 1%;
+
+        }
+        .slider2 img{ 
+            position:absolute; 
+            animation:fling-minislide 20s infinite; 
+            opacity:0; 
+            min-width: 75%;
+            min-height: auto;
+            background-size: cover;
+        }
+        
+        .centertext3 {
+            font-style: italic;
+        }
+        
+        .video {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        margin-top: 1%;
+        margin-left: 1cm;
+    }
+        
+        iframe {
+        max-width: 350%;
+        max-height: 50%;
+        margin-left: 50%;
+    }
+}
