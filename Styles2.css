@@ -44,18 +44,12 @@ a:hover {
     margin-top: 1%;
 }
 
-.about {
-    font-family: Ubuntu, Helvetica, sans-serif;
-    margin-top: 35%; 
-    grid-area: c;
-}
-    
 .lucille img {
     float: left;
     padding: 3%;
     max-width: 27%;
     opacity: 90%; 
-    border-radius: 0%;
+    border-radius: 25%;
 }
 
 .julia img {
@@ -63,7 +57,7 @@ a:hover {
     padding: 3%;
     max-width: 27%;
     opacity: 90%; 
-    border-radius: 0%;
+    border-radius: 25%;
 }
 
 .michael img {
@@ -71,40 +65,7 @@ a:hover {
     padding: 3%;
     max-width: 27%;
     opacity: 90%; 
-    border-radius: 0%;
-}
-    
-.lucille h1 {
-    width: 20%;
-    height:100px;
-    font-size: 10px;
-    margin-left: 7% ;
-    word-break: break-all;
-    text-align: center;
-    margin-top: -25%;
-    font-weight: lighter;
-}
-
-.julia h1 {
-    width: 20%;
-    height: 100px;
-    font-size: 10px;
-    margin-left: 39% ;
-    word-break: break-all;
-    text-align: center;
-    margin-top: -2.856cm;
-    font-weight: lighter;
-}
-
-.michael h1 {
-    width: 20%;
-    height: 100px;
-    font-size: 10px;
-    margin-left: 72%;
-    word-break: break-all;
-    text-align: center;
-    margin-top: -2.855cm;
-    font-weight: lighter;
+    border-radius: 25%;
 }
     
 .footer {
@@ -290,14 +251,11 @@ h5 {
 }
 
 .video {
-    grid-column-start: 2;
-    grid-row-start: 3;
-    margin-top: 135%;
     margin-right:14%;
     margin-bottom: -50%;
 }
 iframe {
-    max-width: 350%;
+    max-width: 50%;
     max-height: 50%;
 }
 
@@ -348,7 +306,7 @@ iframe {
         .about {
             font-family: Ubuntu, Helvetica, sans-serif;
             margin-top: 12%;
-            margin-left: 15%; 
+            margin-left: 7%; 
             grid-area: c;
         }
             
@@ -358,7 +316,7 @@ iframe {
             padding: 3%;
             max-width: 21.5%;
             opacity: 90%; 
-            border-radius: 0%;
+            
         }
             
         .lucille h1 {
@@ -366,7 +324,7 @@ iframe {
             height: 100px;
             font-size: 14px;
             margin-left: 5% ;
-            word-break: break-all;
+            word-break:normal;
             text-align: center;
             margin-top: -2.855cm;
             font-weight: lighter;
@@ -377,7 +335,7 @@ iframe {
             height: 100px;
             font-size: 14px;
             margin-left: 35% ;
-            word-break: break-all;
+            word-break: normal;
             text-align: center;
             margin-top: -2.856cm;
             font-weight: lighter;
@@ -388,10 +346,14 @@ iframe {
             height: 100px;
             font-size: 14px;
             margin-left: 65% ;
-            word-break: break-all;
+            word-break: normal;
             text-align: center;
             margin-top: -2.855cm;
             font-weight: lighter;
+        }
+
+        .tweet {
+            margin-left: -90%;
         }
             
         .footer {
@@ -410,7 +372,7 @@ iframe {
             text-decoration: none;
             margin: 5px 2px;
             margin-bottom: 0.5%;
-            margin-top: 0.5%;
+            margin-top: 0.7%;
             border-radius: 30%;
         }
         
@@ -452,7 +414,7 @@ iframe {
         h3 {
             font-family: Ubuntu, Helvetica, sans-serif;
             font-weight: lighter;
-            margin-top: 50%; 
+            margin-top: 70%; 
             font-size: 100%;
             text-align:center;
         }
@@ -460,7 +422,7 @@ iframe {
         h4 {
             font-family: Ubuntu, Helvetica, sans-serif;
             font-weight: lighter;
-            margin-top: 50%;  
+            margin-top: 10%;  
             font-size: 100%;
             text-align:center;
             margin-bottom: 10%;
@@ -488,11 +450,19 @@ iframe {
         
         h5 {
             font-family: Ubuntu, Helvetica, sans-serif;
-            font-weight: lighter;
+            font-weight:100;
             margin-top: 65%;  
-            font-size: 100%;
+            font-size: 130%;
             text-align: center;
-            word-break: break-all;
+            word-break: normal;
+        }
+
+        .video iframe{
+            height: 300%;
+            width: 200%;
+            margin-left: 170%;
+            margin-top: -50%;
+            white-space:nowrap;
         }
         
         .header {
@@ -572,13 +542,11 @@ iframe {
 
         .slider2 {
             grid-column-start: 4;
-            grid-column-end: 6;
-            margin-top:-5%; 
+            grid-column-end: 7;
+            margin-top:-10%; 
             width: 100%;
-            height: auto;
-            object-fit: cover;
-            margin-left: 1%;
-
+            height: 40%;
+            padding: 5%;
         }
         .slider2 img{ 
             position:absolute; 
@@ -597,13 +565,12 @@ iframe {
         grid-column-start: 2;
         grid-row-start: 3;
         grid-row-end: 3;
-        margin-top: 1%;
-        margin-left: 1cm;
+        margin-top: 0%;
     }
         
         iframe {
         max-width: 350%;
-        max-height: 50%;
+        max-height:50%;
         margin-left: 50%;
     }
 }
